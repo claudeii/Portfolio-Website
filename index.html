@@ -9,17 +9,17 @@
 <body>
 
     <div class="top-bar"></div>
-        <div class="top-bar">
+      <div class="top-bar">
     <div class="nav-links">
-        <a href=".hero-section" class="nav-item">HOME</a>
-        <a href=".about-section" class="nav-item">ABOUT ME</a>
-        <a href=".projects-section" class="nav-item">PROJECTS</a>
-        <a href=".skills-section" class="nav-item">SKILLS</a>
-        <a href=".certifications-section" class="nav-item">CERTIFICATIONS</a>
+        <a href="#home" class="nav-item">HOME</a>
+        <a href="#about" class="nav-item">ABOUT ME</a>
+        <a href="#projects" class="nav-item">PROJECTS</a>
+        <a href="#skills" class="nav-item">SKILLS</a>
+        <a href="#certifications" class="nav-item">CERTIFICATIONS</a>
     </div>
 </div>
 
-    <section class="hero-section">
+    <section id="home" class="hero-section">
         <div class="hero-content reveal">
             <p class="sub-headline">Hi! I am</p>
             <h1 class="main-name">CLAUDETTE</h1>
@@ -29,8 +29,7 @@
         </div>
     </section>
 
-    <section class="about-section reveal">
-        
+    <section id="about" class="about-section reveal">
         <div class="about-text">
             <h2>ABOUT ME</h2>
             <p> I am Claudette P. Capundan, a third-year student at the Polytechnic University of 
@@ -50,9 +49,8 @@
         </div>
     </section>
 
-    <section class="projects-section reveal">
+    <section id="projects" class="projects-section reveal">
     <h2>PROJECTS</h2>
-    
     <div class="projects-grid">
         <div class="project-card" onclick="openProject('server-project')">
             <h3>Server Management Automation</h3>
@@ -81,7 +79,7 @@
 <script src="script.js"></script>
 
 
-<section class="skills-section reveal">
+<section id="skills" class="skills-section reveal">
     <div class="skills-container">
         <div class="skills-text">
             <h2>SKILLS</h2>
@@ -112,7 +110,7 @@
     </div>
 </section>
 
-<section class="certifications-section reveal">
+<section id="certifications" class="certifications-section reveal">
     <div class="certifications-container">
         <h2>CERTIFICATIONS</h2>
         
@@ -173,4 +171,3 @@
 </div>
 
 </html>
-
