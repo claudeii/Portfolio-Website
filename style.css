@@ -123,7 +123,8 @@ body {
 }
 
 .about-text {
-    width: 600px; 
+    max-width: 600px; 
+    width: 100%;
     flex-shrink: 0;
 }
 
@@ -141,8 +142,14 @@ body {
     text-align: justify;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .about-image {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     flex-shrink: 0; 
     display: flex;
     justify-content: flex-end; 
@@ -625,4 +632,75 @@ body {
 
 .footer-icon:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+
+    /* 🔹 NAVBAR */
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        font-size: 0.7rem;
+    }
+
+    /* 🔹 HERO */
+    .main-name {
+        font-size: 3rem; /* from 6rem → smaller */
+    }
+
+    .sub-headline {
+        font-size: 1.5rem;
+    }
+
+    .statement {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    /* 🔹 ABOUT SECTION */
+    .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 80%;
+    }
+
+    /* 🔹 PROJECTS */
+    .project-card {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* 🔹 SKILLS */
+    .skills-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skills-text h2 {
+        font-size: 2.5rem;
+    }
+
+    /* 🔹 CERTIFICATIONS */
+    .certifications-section h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
 }
