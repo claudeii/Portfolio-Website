@@ -96,10 +96,10 @@ const navObserver = new IntersectionObserver((entries) => {
             navItems.forEach(link => link.classList.remove('active-link'));
             
             // Get the class of the current section
-            const sectionClass = `.${entry.target.classList[0]}`;
+            const sectionId = `#${entry.target.id}`;
             
             // Find the link that matches this section's class and highlight it
-            const activeLink = document.querySelector(`.nav-item[href="${sectionClass}"]`);
+            const activeLink = document.querySelector(`.nav-item[href="${sectionId}"]`);
             if (activeLink) activeLink.classList.add('active-link');
         }
     });
